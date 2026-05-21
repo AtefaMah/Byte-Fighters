@@ -1,6 +1,6 @@
 package com.ticketea.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -34,11 +34,11 @@ public class Artista {
      *
      * @ManyToOne → muchos artistas → un festival
      * @JoinColumn → nombre de la columna FK en la tabla artista
-     * @JsonIgnoreProperties → evita bucle infinito JSON (festival → artistas → festival → ...)
+     * @JsonIgnore → evita bucle infinito JSON ignorando el festival en la respuesta
      */
+    @JsonIgnore
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "festival_id", nullable = false)
-    @JsonIgnoreProperties({"artistas", "clientes"})
     @NotNull(message = "El festival es obligatorio")
     private Festival festival;
 }

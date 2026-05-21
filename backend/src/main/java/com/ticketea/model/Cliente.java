@@ -1,6 +1,6 @@
 package com.ticketea.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -45,9 +45,9 @@ public class Cliente {
     /**
      * Relación N:1 → Muchos clientes asisten a UN festival
      */
+    @JsonIgnore
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "festival_id", nullable = false)
-    @JsonIgnoreProperties({"artistas", "clientes"})
     @NotNull(message = "El festival es obligatorio")
     private Festival festival;
 }
