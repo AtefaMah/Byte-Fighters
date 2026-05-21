@@ -1,7 +1,5 @@
 -- ============================================
--- DATOS DE EJEMPLO PARA TICKETEA
--- Este fichero se carga automáticamente al
--- arrancar la aplicación Spring Boot.
+-- DATOS DE EJEMPLO PARA LA APLICACIÓN
 -- ============================================
 
 -- FESTIVALES (3 registros)
