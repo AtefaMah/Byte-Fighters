@@ -2,8 +2,8 @@ import { Component, OnInit, signal, computed } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { FestivalService } from '../../app/services/festival.service';
-import { Festival } from '../../app/models/models';
+import { FestivalService } from '../../services/festival.service';
+import { Festival } from '../../models/models';
 
 /**
  * Componente Lista de Festivales.

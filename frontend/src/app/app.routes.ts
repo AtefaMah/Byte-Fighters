@@ -2,14 +2,7 @@ import { Routes } from '@angular/router';
 
 /**
  * Definición de rutas de la aplicación.
- * Cada ruta carga su componente de forma lazy (loadComponent) para mejor rendimiento.
- *
- * URL base: http://localhost:4200
- *   /            → Página de inicio
- *   /festivales  → Lista de festivales
- *   /festivales/:id → Detalle de un festival
- *   /artistas    → Lista de artistas
- *   /clientes    → Lista de clientes
+ * Cada ruta carga su componente de forma lazy (LoadComponent) para mejor rendimiento.
  */
 export const routes: Routes = [
   {
