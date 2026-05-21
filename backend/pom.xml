@@ -15,7 +15,7 @@
     <artifactId>ticketea-backend</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>ticketea-backend</name>
-    <description>Backend del proyecto TicketEA — FP Dual NTT Data</description>
+    <description>Backend del proyecto BYTE-FIGHTERS</description>
 
     <properties>
         <java.version>17</java.version>
