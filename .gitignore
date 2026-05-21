@@ -1,0 +1,45 @@
+# ==========================================
+# BACKEND (Java / Spring Boot / Maven)
+# ==========================================
+target/
+*.class
+*.jar
+*.war
+*.log
+
+# ==========================================
+# FRONTEND (Angular / Node.js)
+# ==========================================
+node_modules/
+dist/
+tmp/
+out-tsc/
+.angular/
+.sass-cache/
+coverage/
+typings/
+npm-debug.log
+yarn-error.log
+testem.log
+__screenshots__/
+
+# ==========================================
+# IDEs y EDITORES DE CÓDIGO
+# ==========================================
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+.project
+.classpath
+.settings/
+*.launch
+*.sublime-workspace
+
+# ==========================================
+# ARCHIVOS DEL SISTEMA
+# ==========================================
+.DS_Store
+Thumbs.db
